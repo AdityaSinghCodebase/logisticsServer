@@ -16,8 +16,8 @@ app.use(helmet());
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL.split(","),
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: ["https://logisticsclient.vercel.app/", "http://localhost:5173"],
+    methods: ["GET", "POST", "PUT", "PATCH", "OPTIONS", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   }),
 );
