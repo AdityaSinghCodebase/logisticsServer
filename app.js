@@ -40,7 +40,7 @@ app.use("/api/dashboard", dashboardRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/reports", reportRoutes);
 
-app.get("/api/health", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ status: "ok", message: "LogiStock API is running" });
 });
 
